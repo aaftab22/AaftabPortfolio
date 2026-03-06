@@ -12,6 +12,11 @@
 }
 
 /* Base Reset */
+html {
+  background-color: #1e1b4b;
+  /* Matches top of hero gradient — hides overscroll flash */
+}
+
 body {
   font-family: 'Outfit', sans-serif;
   color: var(--text-main);
