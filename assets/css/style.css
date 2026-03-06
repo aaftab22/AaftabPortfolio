@@ -97,10 +97,22 @@ ul.side-nav.fixed li a i {
   line-height: 54px !important;
 }
 
-ul.side-nav.fixed li a:hover,
-ul.side-nav.fixed li a.active {
+/* Reset Materialize default li backgrounds and table-of-contents borders */
+ul.side-nav.fixed li:hover,
+ul.side-nav.fixed li.active {
+  background-color: transparent !important;
+}
+
+ul.side-nav.fixed li.bold a {
+  border-left: none !important;
+  width: 100% !important;
+}
+
+ul.side-nav.fixed li.bold a:hover,
+ul.side-nav.fixed li.bold a.active {
   color: #fff !important;
-  background-color: rgba(79, 70, 229, 0.1) !important;
+  background-color: var(--primary) !important;
+  border-left: none !important;
 }
 
 /* Section Header */
@@ -671,6 +683,15 @@ h3.page-title {
   color: #009688;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+/* Education Section Spaces */
+#education .card-content p {
+  margin-bottom: 12px;
+}
+
+#education .card-content p:last-child {
+  line-height: 2;
 }
 
 /* Scrollbar */
