@@ -305,12 +305,24 @@ h3.page-title {
   margin-top: 20px;
 }
 
+.about-wrapper .row {
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.about-wrapper .row>[class*='col'] {
+  display: flex;
+  flex-direction: column;
+}
+
 .about-text,
 .about-highlights {
   border-radius: 20px !important;
-  padding: 40px !important;
+  padding: 25px !important;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
-  height: 100%;
+  flex: 1;
+  margin-bottom: 0 !important;
 }
 
 .section-subtitle {
