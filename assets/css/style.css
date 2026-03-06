@@ -229,6 +229,29 @@ h3.page-title {
   margin-bottom: 30px;
 }
 
+/* Equal height cards in flex rows */
+.row.display-flex {
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.row.display-flex>[class*='col'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.row.display-flex>[class*='col']>.card {
+  flex: 1;
+  display: flex !important;
+  flex-direction: column !important;
+  margin-bottom: 0;
+}
+
+.row.display-flex>[class*='col']>.card>.card-content {
+  flex: 1;
+}
+
 .card:hover {
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
@@ -389,6 +412,36 @@ h3.page-title {
   margin: 0;
   font-size: 0.9rem;
   color: var(--text-muted);
+}
+
+/* Experience section list & tool tags */
+.exp-list {
+  padding-left: 18px;
+  margin: 0 0 16px 0;
+}
+
+.exp-list li {
+  font-size: 0.92rem;
+  color: var(--text-main);
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.exp-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.exp-tools span {
+  background: rgba(79, 70, 229, 0.08);
+  color: var(--primary);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(79, 70, 229, 0.2);
 }
 
 .card .company {
